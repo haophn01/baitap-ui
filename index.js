@@ -38,3 +38,13 @@ document.getElementById("bt4_button").onclick = function () {
     }
     document.getElementById("result4").innerHTML = `Diện tích là ${dienTich}, Chu vi là ${chuVi}.`
 }
+
+document.getElementById("bt5_button").onclick = function () {
+    const userInput = String(document.getElementById("bt5").value);
+    let total = 0
+    for (let str of userInput) {
+        total += Number(str)
+    }
+
+    document.getElementById("result5").innerHTML = `Kết quả là ${total}.`
+}
