@@ -14,3 +14,8 @@ document.getElementById("submit2").onclick = function() {
     let total = (mot + hai + ba + bon + nam) / 5;
     document.getElementById("result2").innerHTML = `Số trung bình là ${total}.`;
 }
+
+document.getElementById("bt3_button").onclick = function () {
+    const userInput = Number(document.getElementById("bt3").value);
+    document.getElementById("result3").innerHTML = `Số tiền Việt là ${new Intl.NumberFormat('vn-VN').format(userInput)}vnd.`
+}
